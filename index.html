@@ -1,39 +1,327 @@
-<!-- <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html;
-charset=iso-8859-1">
-<title>An example HTML page</title>
-</head>
-<body>
-<h2>This is an example HTML page</h2>
-<p>
-Hello My name is nikhil
-<p><a href="../html/html-tutorils.php">Learn HTML from
-w3resource.com</a>
-</body>
-</html> -->
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>My first!</title>
-    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
-    </head>
-    <body>
-        <h1>Introduction
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Aquascaping | All about aquaplants </title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/aquascape.png"
+          alt="Aqua_logo"
+          class="nav__logo"
+          id="logo"
+          designer="nik"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Shopping</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#">Open account</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+            We’ve got
+          <!-- Green highlight effect -->
+          <span class="highlight">Plants</span>
+          that’ll make your<br />
+          <span class="highlight">Fish Dance</span>
         </h1>
-        <p>Hye my name is nikhil \n
-            and this is my intro 
-            and i am in ajackus 
-            as jr developer.
-        </p>
-        <div>
-            <ul>
-                <li>My</li>
-                <li class="italic">Name</li>
-                <li>is Nikhil</li>
-            </ul>
+        <h4>A Beautiful hobby.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/plants.png"
+          class="header__img"
+          alt="Plants"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">About</h2>
+        <h3 class="section__header">
+          Everything you need to know about.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/aboutplants.jfif"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Introduction</h5>
+          <p>
+            Aquatic plants are plants that have adapted to living in aquatic environments (saltwater or freshwater). They are also referred to as hydrophytes or macrophytes to distinguish them from algae and other microphytes. A macrophyte is a plant that grows in or near water and is either emergent, submergent, or floating
+          </p>
         </div>
-    </body> 
-</html> 
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use></use>
+            </svg>
+          </div>
+          <h5 class="features__header">CarbonDioxide and Ph Levels</h5>
+          <p>
+            Most aquarium plants do best at a pH between 6.5 and 7.8, general hardness of 50 ppm to 100 ppm and alkalinity between 3° and 8° dKH (54ppm – 140 ppm). Nitrates should be below 10 ppm and phosphates below 0.5 ppm to prevent nuisance algae from growing on leaves. Temperature should be between 74° and 80° F.
+          </p>
+        </div>
+        <img
+          src="img/coph.png"
+          data-src="img/coph.png"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/aquarium-fishes.jpg"
+          data-src="img/aquarium-fishes.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use ></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Fishes</h5>
+          <p>
+            Freshwater fish are those that spend some or all of their lives in fresh water, such as rivers and lakes, with a salinity of less than 1.05%. These environments differ from marine conditions in many ways, the most obvious being the difference in levels
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Plants</h2>
+        <h3 class="section__header">
+          Three types of Aquaplants
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Anubias
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Moss
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Driftwood
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use ></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Anubias Barteri is one of the more popular and resilient of the freshwater aquarium plants.
+          </h5>
+          <p>
+            Anubias Barteri is noted for its thick rhizome, strong root structure and durable green leaves. Depending on variety, Anubias Barteri makes a great foreground, midground or even a background plant.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use ></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Java Moss Aquarium Plant.
+          </h5>
+          <p>
+            Java moss is one of the easiest to grow, and hardy, aquarium plants around. It belongs to the Hypnaceae family and is native to Southeast Asia. It is very common in moist tropical climates and grows on rocks, river banks and tree trunks.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use ></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Woods which is used in Fresh water.
+          </h5>
+          <p>
+            Gives beautiful look to your aquarium.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Shopping</h2>
+        <h3 class="section__header">
+          Millions of Customer are statisfied with our great service.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best Product ever ever!</h5>
+            <blockquote class="testimonial__text">
+              Got impressed by the product just by seeing it nad not even used it at all hahaha.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/Nikhil_Photo.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Nikhil Ramgiri</h6>
+              <p class="testimonial__location">From Moon itself</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Good Product
+            </h5>
+            <blockquote class="testimonial__text">
+              I will order it one more time thanks
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/Nikhil_Photo.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Kaustubh</h6>
+              <p class="testimonial__location">Dubai</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Exellect!!
+            </h5>
+            <blockquote class="testimonial__text">
+              I want to buy this company as soon as possible.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/Nikhil_Photo.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Tejas</h6>
+              <p class="testimonial__location">India, andaman nikobar</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Why are you waiting for start your shopping peace out.
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/ramgiri_nikhil"
+          >Nikhil Ramgiri</a
+        >. Project as a POC
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <label>Password</label>
+        <input type="text" />
+        <label>Confirm Password</label>
+        <input type="text" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
